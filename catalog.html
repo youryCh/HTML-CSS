@@ -33,34 +33,69 @@
     <section class="main-catalog__filter center">
         <div class="filter__menu">
             <input class="filter__menu__input" type="checkbox" id="filter">
-            <label for="filter">
+            <label for="filter" class="filter__menu__text">
                 FILTER
-                <img src="img/filter_img.svg" alt="toggle">
+                <img src="img/filter_img.svg" class="filter__img_mg" alt="toggle">
             </label>
             <nav class="filter__menu__navbar">
-                <details open>
+                <input class="filter__menu__input" type="checkbox" id="filter">
+                <label for="filter" class="filter__menu__text_red">
+                FILTER
+                <img src="img/filter_img_red.svg" class="filter__img_mg" alt="toggle">
+                <details class="filter__menu__details" open>
                     <summary>CATEGORY</summary>
                     <div class="filter__menu__category">
-                        <a href="">Accessories</a>
-                        <a href="">Bags</a>
-                        <a href="">Denim</a>
-                        <a href="">Hoodies & Sweatshirts</a>
-                        <a href="">Jackets & Coats</a>
-                        <a href="">Polos</a>
-                        <a href="">Shirts</a>
-                        <a href="">Shoes</a>
-                        <a href="">Sweaters & Knits</a>
-                        <a href="">T-Shirts</a>
-                        <a href="">Tanks</a>
+                        <a href="#" class="filter__menu__ref">Accessories</a>
+                        <a href="#" class="filter__menu__ref">Bags</a>
+                        <a href="#" class="filter__menu__ref">Denim</a>
+                        <a href="#" class="filter__menu__ref">Hoodies & Sweatshirts</a>
+                        <a href="#" class="filter__menu__ref">Jackets & Coats</a>
+                        <a href="#" class="filter__menu__ref">Polos</a>
+                        <a href="#" class="filter__menu__ref">Shirts</a>
+                        <a href="#" class="filter__menu__ref">Shoes</a>
+                        <a href="#" class="filter__menu__ref">Sweaters & Knits</a>
+                        <a href="#" class="filter__menu__ref">T-Shirts</a>
+                        <a href="#" class="filter__menu__ref">Tanks</a>
                     </div>
                 </details>
-                <details>
+                <details class="filter__menu__details">
                     <summary>BRAND</summary>
                 </details>
-                <details>
+                <details class="filter__menu__details">
                     <summary>DESIGNER</summary>
                 </details>
             </nav>
+        </div>
+        <div class="main-catalog__filter__center">
+            <div class="filter__center__menu">
+                <input type="checkbox" id="filter">
+                <label for="">
+                    TRENDING NOW
+                    <img src="img/filter_img2.svg" alt="toggle">
+                </label>
+                <nav class="filter__menu__navbar"></nav>
+            </div>            
+            <div class="filter__center__menu">
+                <input type="checkbox" id="filter2" class="filter__menu__input">
+                <label for="filter2">
+                    SIZE 
+                    <img src="img/filter_img2.svg" alt="toggle">
+                </label>
+                <nav class="filter__menu__navbar">
+                    <label><input type="checkbox" class="checkbox_visible">XS</label>
+                    <label><input type="checkbox" class="checkbox_visible">S</label>
+                    <label><input type="checkbox" class="checkbox_visible">M</label>
+                    <label><input type="checkbox" class="checkbox_visible">L</label>
+                </nav>
+            </div>            
+            <div class="filter__center__menu">
+                <input type="checkbox" id="filter">
+                <label for="">
+                    PRICE
+                    <img src="img/filter_img2.svg" alt="toggle">
+                </label>
+                <nav class="filter__menu__navbar"></nav>
+            </div>            
         </div>
     </section>
     <section class="main-catalog__product center">
