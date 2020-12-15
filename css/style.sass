@@ -76,6 +76,9 @@ input[type=checkbox]
     font-weight: 400
     color: #6F6E6E
 
+    &:hover
+        color: $buttonColor
+
 .promo
     background-color: rgba(113, 103, 105, 0.08)
     display: flex
@@ -264,7 +267,7 @@ input[type=checkbox]
         color: #FBFBFB
 
 .footer__subscribe
-    background-image: url(img/footer_bcg.png)
+    background-image: url(../img/footer_bcg.png)
     background-size: cover
     background-position: center, bottom
     height: 448px
@@ -401,6 +404,7 @@ input[type=checkbox]
     display: grid
     grid-template: repeat(1, 1fr) / repeat(3, 1fr)
     grid-gap: 30px
+    margin-bottom: 128px
 
 .filter__menu
     position: relative
@@ -444,6 +448,9 @@ input[type=checkbox]
         +font(14px, 17px)
         color: #6F6E6E
         margin: 11px 12px
+
+        &:hover
+            color: $buttonColor
 
     &__input:checked ~ nav
         left: -5px
