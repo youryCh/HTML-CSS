@@ -9,13 +9,13 @@
 <body>
     <header class="top-header">
         <div class="top-header__left">
-            <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+            <a href="index.html"><img src="img/logo.svg" class="top-header__logo" alt="logo"></a>
             <a href="#"><img src="img/search.svg" class="top-header__search" alt="search"></a>
         </div>
         <div class="top-header__right">
             <input type="checkbox" id="main_menu">
             <label for="main_menu">
-                <img src="img/menu.svg" alt="menu">
+                <img src="img/menu.svg" class="top-header__main-menu" alt="menu">
             </label>
             <nav>
                 <label for="main_menu" class="close_icon">
@@ -42,7 +42,7 @@
                 <a href="catalog.html" class="main_menu__item">Bags</a>
             </nav>
             <a href="registration.html"><img src="img/account.svg" class="top-header__account" alt="account"></a>
-            <a href="cart.html"><img src="img/trolley.svg" alt="trolley"></a>
+            <a href="cart.html"><img src="img/trolley.svg" class="top-header__cart" alt="trolley"></a>
         </div>
     </header>
     <section class="main-catalog__header__container">
@@ -57,7 +57,7 @@
                 <input type="text" class="registration-form__input" placeholder="First Name" required>
                 <input type="text" class="registration-form__input" placeholder="Last Name" required>
                 <label class="registration-form__radio_font">
-                    <input type="radio" class="registration-form__radio" name="sex">
+                    <input type="radio" class="registration-form__radio" name="sex" checked>
                     Male
                 </label>
                 <label class="registration-form__radio_font">
@@ -73,7 +73,7 @@
             </form>
         </div>
         <div class="registration-info">
-            <h3>LOYALTY HAS ITS PERKS</h3>
+            <h3 class="registration-info__header">LOYALTY HAS ITS PERKS</h3>
             <p class="registration-info__description">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
             <p class="registration-info__perk">15% off welcome offer</p>
             <p class="registration-info__perk">Free shipping, returns and exchanges on all orders</p>

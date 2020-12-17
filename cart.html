@@ -9,13 +9,14 @@
 <body>
     <header class="top-header">
         <div class="top-header__left">
-            <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+            <a href="index.html"><img src="img/logo.svg"
+                class="top-header__logo" alt="logo"></a>
             <a href="#"><img src="img/search.svg" class="top-header__search" alt="search"></a>
         </div>
         <div class="top-header__right">
             <input type="checkbox" id="main_menu">
             <label for="main_menu">
-                <img src="img/menu.svg" alt="menu">
+                <img src="img/menu.svg" class="top-header__main-menu" alt="menu">
             </label>
             <nav>
                 <label for="main_menu" class="close_icon">
@@ -42,7 +43,7 @@
                 <a href="catalog.html" class="main_menu__item">Bags</a>
             </nav>
             <a href="registration.html"><img src="img/account.svg" class="top-header__account" alt="account"></a>
-            <a href="cart.html"><img src="img/trolley.svg" alt="trolley"></a>
+            <a href="cart.html"><img src="img/trolley.svg" class="top-header__cart" alt="trolley"></a>
         </div>
     </header>
     <section class="main-catalog__header__container">
@@ -55,7 +56,7 @@
             <div class="cart__product__item">
                 <img src="img/product_img3.png" class="cart__product__item__img" alt="product">
                 <div class="cart__product__item__description">
-                    <h3 class="cart__product__item__header">MANGO  PEOPLE  T-SHIRT</h3>
+                    <h3 class="cart__product__item__header"><a href="product.html" class="product-card_color">MANGO  PEOPLE  T-SHIRT</a></h3>
                     <h4 class="cart__product__item__text">
                         Price:
                         <p class="cart__product__item__description_mg cart__product__item__description_red">$300</p>
@@ -69,8 +70,8 @@
                         <p class="cart__product__item__description_mg">Xl</p>
                     </h4>
                     <h4 class="cart__product__item__text">
-                        Quantity:
-                        <p class="cart__product__item__description_mg cart__product__item__description__box">2</p>
+                        Quantity:                        
+                        <input type="number" class="cart__product__item__description__box" min="1" max="9">
                     </h4>                    
                 </div>
                 <a href="#" class="cart__product__item__close_img"><img src="img/close_img2.svg" alt="close"></a>
@@ -78,7 +79,7 @@
             <div class="cart__product__item">
                 <img src="img/product_img13.png" class="cart__product__item__img" alt="product">
                 <div class="cart__product__item__description">
-                    <h3 class="cart__product__item__header">MANGO  PEOPLE  T-SHIRT</h3>
+                    <h3 class="cart__product__item__header"><a href="product.html" class="product-card_color">MANGO  PEOPLE  T-SHIRT</a></h3>
                     <h4 class="cart__product__item__text">
                         Price:
                         <p class="cart__product__item__description_mg cart__product__item__description_red">$300</p>
@@ -93,7 +94,7 @@
                     </h4>
                     <h4 class="cart__product__item__text">
                         Quantity:
-                        <p class="cart__product__item__description_mg cart__product__item__description__box">2</p>
+                        <input type="number" class="cart__product__item__description__box" min="1" max="9">
                     </h4>                    
                 </div>
                 <a href="#" class="cart__product__item__close_img"><img src="img/close_img2.svg" alt="close"></a>
@@ -103,7 +104,7 @@
                 <a href="catalog.html" class="cart__product__buttons__item">CONTINUE SHOPPING</a> 
             </div>           
         </div>
-        <div class="cart__address">
+        <form class="cart__address">
             <div class="cart__address__form">
                 <h4 class="cart__address__form__header">SHIPPING ADRESS</h4>
                 <input type="text" class="cart__address__form__input" placeholder="Country">
@@ -123,7 +124,7 @@
                 <div class="cart__address__total__devider"></div>
                 <a href="#" class="cart__address__total__button">PROCEED TO CHECKOUT</a>
             </div>
-        </div>
+        </form>
     </main>
     <footer>        
         <div class="footer__subscribe center">

@@ -31,11 +31,37 @@ input[type=checkbox]
     justify-content: space-between
     align-items: center
 
+    &__logo
+        transition: .2s
+        
+        &:hover
+            transform: scale(1.1)
+
     &__search
         padding-left: 41px
+        transition: .2s
+        
+        &:hover
+            transform: scale(1.1)
+
+    &__main-menu
+        transition: .2s
+        
+        &:hover
+            transform: scale(1.1)
 
     &__account
         padding: 0 33px
+        transition: .2s
+        
+        &:hover
+            transform: scale(1.1)
+
+    &__cart
+        transition: .2s
+        
+        &:hover
+            transform: scale(1.1)
 
     &__right
         position: relative
@@ -75,6 +101,7 @@ input[type=checkbox]
     +font(14px, 17px)
     font-weight: 400
     color: #6F6E6E
+    transition: .2s
 
     &:hover
         color: $buttonColor
@@ -455,6 +482,7 @@ input[type=checkbox]
         +font(14px, 17px)
         color: #6F6E6E
         margin: 11px 12px
+        transition: .2s
 
         &:hover
             color: $buttonColor

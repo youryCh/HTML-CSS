@@ -39,12 +39,56 @@ input[type=checkbox] {
           align-items: center;
 }
 
+.top-header__logo {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.top-header__logo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .top-header__search {
   padding-left: 41px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.top-header__search:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.top-header__main-menu {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.top-header__main-menu:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .top-header__account {
   padding: 0 33px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.top-header__account:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.top-header__cart {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.top-header__cart:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .top-header__right {
@@ -105,6 +149,8 @@ input[type=checkbox] {
   line-height: 17px;
   font-weight: 400;
   color: #6F6E6E;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .main_menu__item:hover {
@@ -709,6 +755,8 @@ input[type=checkbox] {
   line-height: 17px;
   color: #6F6E6E;
   margin: 11px 12px;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .filter__menu__ref:hover {
@@ -1177,16 +1225,10 @@ details summary::-webkit-details-marker {
   width: 43px;
   height: 24px;
   border: 1px solid #EAEAEA;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-left: 24px;
+  padding-left: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: Lato;
   font-size: 18px;
   line-height: 22px;
@@ -1230,7 +1272,6 @@ details summary::-webkit-details-marker {
   font-size: 16px;
   line-height: 19px;
   font-weight: 300;
-  color: #222222;
 }
 
 .cart__address__form__button {
@@ -1346,6 +1387,10 @@ details summary::-webkit-details-marker {
   background-color: #e05c6e;
 }
 
+.product-card_color {
+  color: #222222;
+}
+
 .registration-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1430,6 +1475,9 @@ details summary::-webkit-details-marker {
 
 .registration-info {
   max-width: 652px;
+}
+
+.registration-info__header {
   font-family: Lato;
   font-size: 24px;
   line-height: 29px;
@@ -1439,10 +1487,20 @@ details summary::-webkit-details-marker {
 
 .registration-info__description {
   margin: 22px 0;
+  font-family: Lato;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  color: #000000;
 }
 
 .registration-info__perk {
   margin-bottom: 16px;
+  font-family: Lato;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  color: #000000;
 }
 
 .registration-info__perk::before {
