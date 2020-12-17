@@ -1,0 +1,669 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap')
+
+@import variables
+
+@import mixins
+
+*
+    margin: 0
+    padding: 0
+
+a
+    text-decoration: none
+
+li
+    list-style: none
+
+input
+    outline: none
+
+input[type=checkbox]
+    display: none
+
+.center
+    +centerPadding()
+
+.top-header
+    +centerPadding()
+    height: 75px
+    background-color: #222224
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &__search
+        padding-left: 41px
+
+    &__account
+        padding: 0 33px
+
+    &__right
+        position: relative
+
+    &__right > nav
+        position: absolute
+        display: none
+        height: 764px
+        width: 232px
+        background: #FFFFFF
+        flex-direction: column
+        padding: 16px 16px 0 32px
+        box-sizing: border-box
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+        z-index: 1
+
+#main_menu:checked ~ nav
+    display: flex
+    margin-top: 22px
+
+.close_icon
+    align-self: flex-end
+
+.main_menu__header
+    margin: 8px 0 12px
+    +font(14px, 17px)
+    font-weight: bold
+
+.main_menu__section
+    margin: 12px 0
+    +font(14px, 17px)
+    font-weight: 400
+    color: $buttonColor
+
+.main_menu__item
+    margin: 6px 0 6px 22px
+    +font(14px, 17px)
+    font-weight: 400
+    color: #6F6E6E
+
+    &:hover
+        color: $buttonColor
+
+.promo
+    background-color: rgba(113, 103, 105, 0.08)
+    display: flex
+
+    &__left
+        width: 50%
+        padding-left: calc(50% - 800px)
+
+    &__img
+        width: 100%
+
+    &__right
+        background-color: #F1E4E6
+        width: 50%
+        padding-right: calc(50% - 800px)
+        display: flex
+        align-items: center
+
+    &__content
+        margin-left: 64px
+        border-left: 12px solid  $buttonColor
+        padding-left: 16px
+
+    &__header
+        +font(48px, 58px)
+        font-weight: 900
+        color: #222224    
+
+    &__text
+        +font(32px, 38px)    
+        font-weight: 700
+        color: #222224
+
+    &__text > span
+        color: $buttonColor
+
+.catalog
+    +centerPadding()
+    display: flex
+    justify-content: space-between
+    margin: 63px 0 30px
+    height: 260px
+
+    &__item_margin
+        margin: 0 30px
+
+    &_img
+        width: 100%
+
+    &__item
+        position: relative
+
+    &__content
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        +flexCenter()
+        flex-direction: column
+
+    &__header
+        +font(16px, 19px)
+        font-weight: 400
+        text-align: center
+        color: #FFFFFF
+
+    &__text
+        +font(24px, 29px)
+        font-weight: 700
+        text-align: center
+        color: $buttonColor
+
+    &__bottom
+        +centerPadding()
+
+.product
+    +centerPadding()
+
+    &__header
+        text-align: center
+
+        &__header
+            +font(30px, 97px)
+            font-weight: 400    
+            color: #222224
+            margin-top: 97px
+
+    &__text
+        +font(14px, 17px)
+        font-weight: 400
+        color: #9F9F9F
+        margin-bottom: 48px
+
+    &__catalog
+        display: grid
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr)
+        grid-gap: 30px
+
+    &__card
+        background-color: #F8F8F8
+        position: relative
+
+        &:hover .product__img
+            filter: brightness(50%)
+
+        &:hover .product__button_hover
+            display: flex
+
+        &__header
+            +font(13px, 16px)
+            font-weight: 400
+            color: #000000
+            padding: 25px 18px 12px
+
+        &__text
+            +font(14px, 17px)
+            font-weight: 300
+            color: #5D5D5D
+            padding: 0 16px
+
+        &__price
+            +font(16px, 19px)
+            font-weight: 400
+            color: $buttonColor
+            padding: 18px 18px 20px
+
+    &__button
+        width: 211px
+        height: 47px
+        +font(16px, 19px)
+        font-weight: 400
+        color: $buttonColor
+        border: 1px solid  $buttonColor
+        +flexCenter()
+        margin: 48px auto 0
+
+        &:hover
+            background-color: $buttonColor
+            color: white
+
+        &_hover
+            position: absolute
+            top: 33%
+            left: 31%
+            border: 1px solid #FFFFFF
+            width: 138px
+            height: 43px
+            justify-content: space-around
+            align-items: center
+            display: none
+            +font(14px, 17px)
+            font-weight: 400
+            color: #FFFFFF
+
+    &__img
+        width: 100%
+
+.footer__top
+    height: 341px
+    background-color: #222224
+    margin-top: 95px
+
+    &__container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 100%
+
+    &__item
+        width: 360px
+        display: flex
+        flex-direction: column
+
+    &__header
+        +font(20px, 24px)
+        font-weight: 400
+        color: #FBFBFB
+        text-align: center
+        margin: 23px 0 16px
+
+    &__text
+        +font(14px, 17px)
+        font-weight: 300
+        text-align: center
+        color: #FBFBFB
+
+.footer__subscribe
+    background-image: url(../img/footer_bcg.png)
+    background-size: cover
+    background-position: center, bottom
+    height: 448px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &__info
+        max-width: 360px
+        text-align: center
+
+    &__text
+        margin-top: 35px
+        +font(20px, 24px)
+        font-weight: 400
+        color: #222224
+
+    &__form
+        text-align: center
+
+    &__form__header
+        +font(24px, 40px)
+        font-weight: bold
+        color: #222224
+
+    &__form__text
+        margin: 10px 0 32px
+        +font(18px, 30px)
+        font-weight: 400
+        color: #222224
+
+    &__form__form
+        height: 49px
+        display: flex
+
+    &__input
+        width: 100%
+        padding: 0 22px
+        border-radius: 25px 0 0 25px
+        background-color: #E1E1E1
+        border: 0
+
+    &__button
+        height: 100%
+        width: 144px
+        border-radius: 0 25px 25px 0
+        background-color: $buttonColor
+        border: 0
+        +font(14px, 17px)
+        font-weight: 400
+        color: #FFFFFF
+
+        &:hover
+            background-color: $buttonColor - #111
+
+.footer__bottom
+    height: 79px
+    background-color: #222224
+
+    &__container
+        height: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+.footer__copyright
+    +font(16px, 19px)
+    font-weight: 400
+    color: #FBFBFB
+
+.footer__social
+    display: flex
+
+.footer__icon
+    width: 32px
+    height: 32px
+    background-color: white
+    margin-left: 7px
+    +flexCenter()
+
+    &:hover
+        background-color: $buttonColor
+
+    &:hover .footer__icon_hover
+        filter: invert(1)
+
+    &__instagram:hover .instagram_invert
+        filter: none
+
+.instagram_invert
+    filter: invert(1)
+
+.main-catalog__header__container
+    height: 148px
+    background-color: #F8F3F4
+
+.main-catalog__header
+    height: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.main-catalog__header__header
+    +font(24px, 29px)
+    font-weight: 400
+    color: $buttonColor
+
+.main-catalog__breadcrumbs
+    display: flex
+
+.breadcrumbs__item
+    margin-left: 5px
+
+    &__ref
+        +font(14px, 17px)
+        font-weight: 300
+        color: #636363
+
+        &:hover
+            color: $buttonColor
+
+    &:last-child a
+        color: $buttonColor
+
+    &:not(:last-child)::after
+        content: " /"
+
+.main-catalog__filter
+    +centerPadding()
+    margin: 51px 0 64px
+    display: flex
+
+.main-catalog__product
+    display: grid
+    grid-template: repeat(1, 1fr) / repeat(3, 1fr)
+    grid-gap: 30px
+    margin-bottom: 128px
+
+.filter__menu
+    position: relative
+
+    &__text
+        +font(14px, 17px)
+        font-weight: 600
+        color: #000000
+        padding-left: 12px
+
+    &__text_red
+        +font(14px, 17px)
+        font-weight: 600
+        color: $buttonColor
+
+    &__navbar
+        position: absolute
+        left: -100vw
+        z-index: 1
+        background-color: white
+        padding: 17px
+        box-sizing: border-box
+        width: 360px
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+
+    &__details
+        +font(14px, 17px)
+        color: $buttonColor
+        margin-top: 18px
+
+    &__details > summary
+        border-left: 5px solid $buttonColor
+        height: 37px
+        border-bottom: 1px solid #EBEBEB
+        display: flex
+        align-items: center
+        padding-left: 11px
+        outline: none
+
+    &__ref
+        +font(14px, 17px)
+        color: #6F6E6E
+        margin: 11px 12px
+
+        &:hover
+            color: $buttonColor
+
+    &__input:checked ~ nav
+        left: -5px
+        top: -16px
+
+    &__category
+        display: flex
+        flex-direction: column
+        background-color: white
+        border-left: 5px solid white
+
+.filter__img_mg
+    margin-left: 11px
+
+details summary::-webkit-details-marker
+    display: none
+
+.main-catalog__filter__center
+    margin-left: 26%
+    display: flex
+
+.filter__center__menu
+    position: relative
+    +font(14px, 17px)
+    color: #6F6E6E
+    margin-left: 28px
+
+.filter__center__navbar
+    position: absolute
+    left: -100vw
+    z-index: 1
+    background-color: white
+    width: 79px
+    height: 103px
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    +font(14px, 16px)
+    color: #6F6E6E
+    padding: 9px
+    box-sizing: border-box
+
+.filter__center__input:checked ~ nav
+    left: 0
+
+.add_checkbox
+    width: 12px
+    height: 12px
+    border: 1px solid #EBEBEB
+    margin-right: 9px
+
+.filter__center__add_checkbox
+    display: flex
+
+.checkbox_visible:checked ~ div
+    background-color: #ccc
+
+.filter_img2_mg
+    margin-left: 10px
+
+.pagination
+    display: flex
+    justify-content: center
+    margin-top: 48px
+
+    &__container
+        width: 284px
+        height: 44px
+        +flexCenter()
+        border: 1px solid #EBEBEB
+        border-radius: 4px
+
+    &__item
+        +font(16px, 19px)
+        font-weight: 300
+        color: #C4C4C4
+        margin-left: 20px
+
+        &_notmg
+            margin-left: 0
+            margin-right: 20px
+
+        &:hover
+            color: $buttonColor
+
+.slider
+    height: 777px
+    background-color: #F7F7F7
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &__img
+        margin-bottom: 42px
+
+    &_arrows
+        filter: brightness(0)
+
+.arrow_box
+    width: 47px
+    height: 47px
+    background-color: #D8D8D8
+    +flexCenter()
+
+    &:hover .slider_arrows
+        filter: brightness(1)
+
+.product_description
+    +centerPadding()
+
+    &__container
+        height: 601px
+        margin-bottom: 60px
+        position: relative
+
+    &_position
+        width: 100%
+        height: 100%
+        position: absolute
+        top: -70px
+        border: 1px solid #EAEAEA
+        background-color: white
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    &_top
+        text-align: center
+        margin-top: 65px
+        width: 641px
+        height: 292px
+        border-bottom: 1px solid #EAEAEA
+
+    &__header
+        +font(14px, 17px)
+        font-weight: 300
+        color: $buttonColor
+
+    &__devider
+        height: 3px
+        width: 63px
+        margin: 12px auto
+        background-color: $buttonColor
+
+    &__subheader
+        +font(18px, 22px)
+        font-weight: 300
+        color: #4D4D4D
+
+    &_top__text
+        width: 570px
+        margin: 48px auto 32px
+        +font(14px, 17px)
+        font-weight: 300
+        color: #5E5E5E
+
+    &__price
+        +font(24px, 29px)
+        font-weight: 300
+        color: $buttonColor
+
+    &__chooser
+        display: flex
+        justify-content: space-between
+        margin: 65px 0 48px
+        width: 373px
+
+    &__chooser__item
+        position: relative
+        +font(14px, 17px)
+        font-weight: 400
+        color: #6F6E6E
+
+        &:hover .product_description__chooser__navbar
+            display: flex
+            left: 14px
+
+    &__chooser__navbar
+        display: none
+        position: absolute
+        z-index: 1
+        background-color: white
+        width: 79px
+        height: 103px
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+        flex-direction: column
+        justify-content: space-around
+        +font(14px, 16px)
+        color: #6F6E6E
+        padding: 9px
+        box-sizing: border-box
+
+    &__chooser__img
+        margin: 0 0 2px 9px
+
+    &__button
+        width: 211px
+        height: 47px
+        border: 1px solid  $buttonColor
+        +font(16px, 19px)
+        font-weight: 400
+        color: $buttonColor
+        +flexCenter()
+
+        &__img
+            margin-right: 23px
+
+        &:hover
+            background-color: $buttonColor
+            color: white
+
+        &:hover .product_description__button__img
+            filter: brightness(3)
+
+@import cart
