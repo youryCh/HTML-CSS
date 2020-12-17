@@ -180,7 +180,7 @@ input[type=checkbox]
 
     &__card
         background-color: #F8F8F8
-        position: relative
+        position: relative        
 
         &:hover .product__img
             filter: brightness(50%)
@@ -215,6 +215,7 @@ input[type=checkbox]
         border: 1px solid  $buttonColor
         +flexCenter()
         margin: 48px auto 0
+        transition: .2s
 
         &:hover
             background-color: $buttonColor
@@ -233,9 +234,11 @@ input[type=checkbox]
             +font(14px, 17px)
             font-weight: 400
             color: #FFFFFF
+            transition: .2s
 
     &__img
         width: 100%
+        transition: .2s
 
 .footer__top
     height: 341px
@@ -348,12 +351,14 @@ input[type=checkbox]
     background-color: white
     margin-left: 7px
     +flexCenter()
+    transition: .2s
 
     &:hover
         background-color: $buttonColor
 
     &:hover .footer__icon_hover
         filter: invert(1)
+        transition: .2s
 
     &__instagram:hover .instagram_invert
         filter: none
@@ -386,6 +391,7 @@ input[type=checkbox]
         +font(14px, 17px)
         font-weight: 300
         color: #636363
+        transition: .2s
 
         &:hover
             color: $buttonColor
@@ -493,7 +499,7 @@ details summary::-webkit-details-marker
     +font(14px, 16px)
     color: #6F6E6E
     padding: 9px
-    box-sizing: border-box
+    box-sizing: border-box    
 
 .filter__center__input:checked ~ nav
     left: 0
@@ -530,6 +536,7 @@ details summary::-webkit-details-marker
         font-weight: 300
         color: #C4C4C4
         margin-left: 20px
+        transition: .2s
 
         &_notmg
             margin-left: 0
@@ -550,6 +557,7 @@ details summary::-webkit-details-marker
 
     &_arrows
         filter: brightness(0)
+        transition: .2s
 
 .arrow_box
     width: 47px
@@ -656,9 +664,11 @@ details summary::-webkit-details-marker
         font-weight: 400
         color: $buttonColor
         +flexCenter()
+        transition: .2s
 
         &__img
             margin-right: 23px
+            transition: .2s
 
         &:hover
             background-color: $buttonColor

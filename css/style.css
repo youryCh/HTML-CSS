@@ -329,6 +329,8 @@ input[type=checkbox] {
       -ms-flex-align: center;
           align-items: center;
   margin: 48px auto 0;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .product__button:hover {
@@ -354,10 +356,14 @@ input[type=checkbox] {
   line-height: 17px;
   font-weight: 400;
   color: #FFFFFF;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .product__img {
   width: 100%;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .footer__top {
@@ -540,6 +546,8 @@ input[type=checkbox] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .footer__icon:hover {
@@ -549,6 +557,8 @@ input[type=checkbox] {
 .footer__icon:hover .footer__icon_hover {
   -webkit-filter: invert(1);
           filter: invert(1);
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .footer__icon__instagram:hover .instagram_invert {
@@ -603,6 +613,8 @@ input[type=checkbox] {
   line-height: 17px;
   font-weight: 300;
   color: #636363;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .breadcrumbs__item__ref:hover {
@@ -829,6 +841,8 @@ details summary::-webkit-details-marker {
   font-weight: 300;
   color: #C4C4C4;
   margin-left: 20px;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .pagination__item_notmg {
@@ -861,6 +875,8 @@ details summary::-webkit-details-marker {
 .slider_arrows {
   -webkit-filter: brightness(0);
           filter: brightness(0);
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .arrow_box {
@@ -1034,10 +1050,14 @@ details summary::-webkit-details-marker {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .product_description__button__img {
   margin-right: 23px;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .product_description__button:hover {
@@ -1089,6 +1109,8 @@ details summary::-webkit-details-marker {
   line-height: 17px;
   font-weight: 300;
   color: #000000;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .cart__product__buttons__item:hover {
@@ -1229,6 +1251,8 @@ details summary::-webkit-details-marker {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .cart__address__form__button:hover {
@@ -1314,6 +1338,8 @@ details summary::-webkit-details-marker {
   -ms-flex-item-align: center;
       align-self: center;
   margin-top: 17px;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .cart__address__total__button:hover {
