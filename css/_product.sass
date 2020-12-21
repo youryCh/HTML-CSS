@@ -111,3 +111,55 @@
 
     &:hover .add-to-cart-btn__img
         filter: brightness(3)
+
+@media (max-width: $screenTablet)
+    .slider
+        height: 624px
+
+        &__img
+            height: 100%
+
+    .product-description__position
+        top: 0
+
+    .product-description__container
+        margin-bottom: 129px
+
+    .footer-subscribe
+        margin-top: 129px
+
+@media (max-width: $screenMobile)
+    .slider
+        position: relative
+
+        &__arrow-box
+            position: absolute
+
+            &:last-child
+                right: 0
+
+        &__img
+            width: 100%
+            height: auto
+
+    .product-description__top
+        width: auto
+        padding: 0 25px
+
+    .product-description__text
+        width: auto
+
+    .chooser__item
+        +font(10px, 12px)
+
+    .chooser
+        justify-content: space-evenly
+
+        &__img
+            margin-left: 10px
+
+    .product-description__container
+        margin-bottom: 64px
+
+    .footer-subscribe
+        margin-top: 64px

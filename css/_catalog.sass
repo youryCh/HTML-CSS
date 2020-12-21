@@ -1,6 +1,6 @@
 .main-catalog__product
     display: grid
-    grid-template: repeat(3, 1fr) / repeat(3, 1fr)
+    grid-template: auto / repeat(3, 1fr)
     grid-gap: 30px
     margin-bottom: 128px
 
@@ -168,7 +168,7 @@ details summary::-webkit-details-marker
 
 @media (max-width: $screenTablet)
     .main-catalog__product
-        grid-template: repeat(4, 1fr) / repeat(2, 1fr)
+        grid-template: auto / repeat(2, 1fr)
         grid-gap: 16px
         padding: 0 16px
         margin-bottom: 40px
