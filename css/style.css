@@ -226,7 +226,7 @@ input[type=checkbox] {
   margin: 0 30px;
 }
 
-.catalog_img {
+.catalog__img {
   width: 100%;
 }
 
@@ -285,7 +285,7 @@ input[type=checkbox] {
   text-align: center;
 }
 
-.product__header__header {
+.product__heading {
   font-family: Lato;
   font-size: 30px;
   line-height: 97px;
@@ -310,49 +310,6 @@ input[type=checkbox] {
   -ms-grid-columns: (1fr)[3];
       grid-template: repeat(2, 1fr)/repeat(3, 1fr);
   grid-gap: 30px;
-}
-
-.product__card {
-  background-color: #F8F8F8;
-  position: relative;
-}
-
-.product__card:hover .product__img {
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
-}
-
-.product__card:hover .product__button_hover {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.product__card__header {
-  font-family: Lato;
-  font-size: 13px;
-  line-height: 16px;
-  font-weight: 400;
-  color: #000000;
-  padding: 25px 18px 12px;
-}
-
-.product__card__text {
-  font-family: Lato;
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 300;
-  color: #5D5D5D;
-  padding: 0 16px;
-}
-
-.product__card__price {
-  font-family: Lato;
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 400;
-  color: #F16D7F;
-  padding: 18px 18px 20px;
 }
 
 .product__button {
@@ -383,7 +340,50 @@ input[type=checkbox] {
   color: white;
 }
 
-.product__button_hover {
+.product-card {
+  background-color: #F8F8F8;
+  position: relative;
+}
+
+.product-card:hover .product-card__img {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.product-card:hover .product-card__button-hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product-card__header {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #000000;
+  padding: 25px 18px 12px;
+}
+
+.product-card__text {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  color: #5D5D5D;
+  padding: 0 16px;
+}
+
+.product-card__price {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #F16D7F;
+  padding: 18px 18px 20px;
+}
+
+.product-card__button-hover {
   position: absolute;
   top: 33%;
   left: 31%;
@@ -405,19 +405,19 @@ input[type=checkbox] {
   transition: .2s;
 }
 
-.product__img {
+.product-card__img {
   width: 100%;
   -webkit-transition: .2s;
   transition: .2s;
 }
 
-.footer__top {
+.footer-top {
   height: 341px;
   background-color: #222224;
   margin-top: 95px;
 }
 
-.footer__top__container {
+.footer-top__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -430,7 +430,7 @@ input[type=checkbox] {
   height: 100%;
 }
 
-.footer__top__item {
+.footer-top__item {
   width: 360px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -441,7 +441,7 @@ input[type=checkbox] {
           flex-direction: column;
 }
 
-.footer__top__header {
+.footer-top__header {
   font-family: Lato;
   font-size: 20px;
   line-height: 24px;
@@ -451,7 +451,7 @@ input[type=checkbox] {
   margin: 23px 0 16px;
 }
 
-.footer__top__text {
+.footer-top__text {
   font-family: Lato;
   font-size: 14px;
   line-height: 17px;
@@ -460,7 +460,7 @@ input[type=checkbox] {
   color: #FBFBFB;
 }
 
-.footer__subscribe {
+.footer-subscribe {
   background-image: url(../img/footer_bcg.png);
   background-size: cover;
   background-position: center, bottom;
@@ -476,12 +476,12 @@ input[type=checkbox] {
           align-items: center;
 }
 
-.footer__subscribe__info {
+.footer-subscribe__info {
   max-width: 360px;
   text-align: center;
 }
 
-.footer__subscribe__text {
+.footer-subscribe__text {
   margin-top: 35px;
   font-family: Lato;
   font-size: 20px;
@@ -490,11 +490,11 @@ input[type=checkbox] {
   color: #222224;
 }
 
-.footer__subscribe__form {
+.subscribe-form {
   text-align: center;
 }
 
-.footer__subscribe__form__header {
+.subscribe-form__header {
   font-family: Lato;
   font-size: 24px;
   line-height: 40px;
@@ -502,7 +502,7 @@ input[type=checkbox] {
   color: #222224;
 }
 
-.footer__subscribe__form__text {
+.subscribe-form__text {
   margin: 10px 0 32px;
   font-family: Lato;
   font-size: 18px;
@@ -511,14 +511,14 @@ input[type=checkbox] {
   color: #222224;
 }
 
-.footer__subscribe__form__form {
+.subscribe-form__form {
   height: 49px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.footer__subscribe__input {
+.subscribe-form__input {
   width: 100%;
   padding: 0 22px;
   border-radius: 25px 0 0 25px;
@@ -526,7 +526,7 @@ input[type=checkbox] {
   border: 0;
 }
 
-.footer__subscribe__button {
+.subscribe-form__button {
   height: 100%;
   width: 144px;
   border-radius: 0 25px 25px 0;
@@ -541,16 +541,16 @@ input[type=checkbox] {
   transition: .2s;
 }
 
-.footer__subscribe__button:hover {
+.subscribe-form__button:hover {
   background-color: #e05c6e;
 }
 
-.footer__bottom {
+.footer-bottom {
   height: 79px;
   background-color: #222224;
 }
 
-.footer__bottom__container {
+.footer-bottom__container {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -563,7 +563,7 @@ input[type=checkbox] {
           align-items: center;
 }
 
-.footer__copyright {
+.footer-bottom__copyright {
   font-family: Lato;
   font-size: 16px;
   line-height: 19px;
@@ -571,13 +571,13 @@ input[type=checkbox] {
   color: #FBFBFB;
 }
 
-.footer__social {
+.footer-bottom__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.footer__icon {
+.footer-bottom__icon {
   width: 32px;
   height: 32px;
   background-color: white;
@@ -595,23 +595,23 @@ input[type=checkbox] {
   transition: .2s;
 }
 
-.footer__icon:hover {
+.footer-bottom__icon:hover {
   background-color: #F16D7F;
 }
 
-.footer__icon:hover .footer__icon_hover {
+.footer-bottom__icon:hover .footer-bottom__icon_hover {
   -webkit-filter: invert(1);
           filter: invert(1);
   -webkit-transition: .2s;
   transition: .2s;
 }
 
-.footer__icon__instagram:hover .instagram_invert {
+.footer-bottom__instagram:hover .footer-bottom__instagram_invert {
   -webkit-filter: none;
           filter: none;
 }
 
-.instagram_invert {
+.footer-bottom__instagram_invert {
   -webkit-filter: invert(1);
           filter: invert(1);
 }
