@@ -1,6 +1,6 @@
 .main-catalog__product
     display: grid
-    grid-template: repeat(1, 1fr) / repeat(3, 1fr)
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr)
     grid-gap: 30px
     margin-bottom: 128px
 
@@ -31,7 +31,7 @@ details summary::-webkit-details-marker
 
     &__navbar
         position: absolute
-        left: -120vw
+        left: -200vw
         z-index: 1
         background-color: white
         padding: 17px
@@ -138,9 +138,7 @@ details summary::-webkit-details-marker
         border: 1px solid #EBEBEB
 
     &__img
-        margin-left: 10px
-
-    
+        margin-left: 10px    
 
 .pagination
     display: flex
@@ -167,3 +165,66 @@ details summary::-webkit-details-marker
 
         &:hover
             color: $buttonColor
+
+@media (max-width: $screenTablet)
+    .main-catalog__product
+        grid-template: repeat(4, 1fr) / repeat(2, 1fr)
+        grid-gap: 16px
+        padding: 0 16px
+        margin-bottom: 40px
+
+    .product-card:last-child
+        display: none
+
+    .main-catalog__header
+        padding: 0 16px
+
+    .filter-menu_position
+        padding: 0 16px
+        margin: 24px 0 40px
+        justify-content: space-between
+
+    .chooser-checkbox_position
+        margin: 0
+
+    .filter-menu__text
+        padding-left: 0
+
+    .top-header__right > nav
+        right: 0
+
+@media (max-width: $screenMobile)
+    .main-catalog__header
+        flex-direction: column
+        justify-content: flex-start
+
+        &__header
+            margin: 24px 0 32px
+
+    .chooser-checkbox
+        +font(12px, 14px)
+        margin-left: 24px
+
+    .filter-menu__text
+        color: #ffffff
+        display: block
+        top: -20px
+
+    .filter-menu__img
+        transform: scale(2)
+
+    .filter-menu__img_red
+        left: 11px
+        top: 21px
+        transform: scale(2)
+
+    .filter-menu__input:checked ~ .filter-menu__text
+        color: #fff
+        display: block
+        top: -20px
+
+    .main-catalog__product
+        grid-template: auto / 1fr
+
+    .footer-top
+        margin-top: 64px
