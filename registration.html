@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>Registration</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="top-header">
         <div class="top-header__left">
-            <a href="index.html"><img src="img/logo.svg"
-                class="top-header__logo" alt="logo"></a>
+            <a href="index.html"><img src="img/logo.svg" class="top-header__logo" alt="logo"></a>
             <a href="#"><img src="img/search.svg" class="top-header__search" alt="search"></a>
         </div>
         <div class="top-header__right">
@@ -48,84 +47,41 @@
     </header>
     <section class="main-catalog__header__container">
         <div class="main-catalog__header center">
-            <h2 class="main-catalog__header__header">SHOPPING CART</h2>            
+            <h2 class="main-catalog__header__header">REGISTRATION</h2>            
         </div>
     </section>
-    <main class="cart">
+    <div class="registration-container center">
         <div>
-            <div class="cart-card">
-                <img src="img/product_img3.png" class="cart-card__img" alt="product">
-                <div class="cart-card__description">
-                    <h3 class="cart-card__header"><a href="product.html" class="cart-card__header_color">MANGO  PEOPLE  T-SHIRT</a></h3>
-                    <h4 class="cart-card__text">
-                        Price:
-                        <p class="cart-card__description_mg cart-card__description_red">$300</p>
-                    </h4>
-                    <h4 class="cart-card__text">
-                        Color:
-                        <p class="cart-card__description_mg">Red</p>
-                    </h4>
-                    <h4 class="cart-card__text">
-                        Size:
-                        <p class="cart-card__description_mg">Xl</p>
-                    </h4>
-                    <h4 class="cart-card__text">
-                        Quantity:                        
-                        <input type="number" class="cart-card__box" min="1" max="9">
-                    </h4>                    
-                </div>
-                <a href="#" class="cart-card__close-img"><img src="img/close_img2.svg" alt="close"></a>
-            </div>
-            <div class="cart-card">
-                <img src="img/product_img13.png" class="cart-card__img" alt="product">
-                <div class="cart-card__description">
-                    <h3 class="cart-card__header"><a href="product.html" class="cart-card__header_color">MANGO  PEOPLE  T-SHIRT</a></h3>
-                    <h4 class="cart-card__text">
-                        Price:
-                        <p class="cart-card__description_mg cart-card__description_red">$300</p>
-                    </h4>
-                    <h4 class="cart-card__text">
-                        Color:
-                        <p class="cart-card__description_mg">Red</p>
-                    </h4>
-                    <h4 class="cart-card__text">
-                        Size:
-                        <p class="cart-card__description_mg">Xl</p>
-                    </h4>
-                    <h4 class="cart-card__text">
-                        Quantity:
-                        <input type="number" class="cart-card__box" min="1" max="9">
-                    </h4>                    
-                </div>
-                <a href="#" class="cart-card__close-img"><img src="img/close_img2.svg" alt="close"></a>
-            </div>
-            <div class="cart-buttons">
-                <a href="#" class="cart-buttons__btn">CLEAR SHOPPING CART</a>
-                <a href="catalog.html" class="cart-buttons__btn">CONTINUE SHOPPING</a> 
-            </div>           
+            <form action="#" class="registration-form">
+                <p class="registration-form__heading">Your Name</p>
+                <input type="text" class="registration-form__input" placeholder="First Name" required>
+                <input type="text" class="registration-form__input" placeholder="Last Name" required>
+                <label class="registration-form__radio_font">
+                    <input type="radio" class="registration-form__radio" name="sex" checked>
+                    Male
+                </label>
+                <label class="registration-form__radio_font">
+                    <input type="radio" class="registration-form__radio registration-form__radio_mg" name="sex">
+                    Female
+                </label>
+                <p class="registration-form__heading">Login details</p>
+                <input type="email" class="registration-form__input" placeholder="Email" required>
+                <input type="password" class="registration-form__input" placeholder="Password" minlength="8">
+                <p class="registration-form__password-text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                <input type="submit" class="registration-form__button" value="JOIN NOW">
+                <img src="img/button-arrow.svg" class="button__add-img" alt="arrow">
+            </form>
         </div>
-        <form class="address">
-            <div class="address__form">
-                <h4 class="address__header">SHIPPING ADRESS</h4>
-                <input type="text" class="address__input" placeholder="Country">
-                <input type="text" class="address__input" placeholder="State">
-                <input type="text" class="address__input" placeholder="Postcode / Zip">
-                <a href="#" class="address__button">GET A QUOTE</a>
-            </div>
-            <div class="quote">
-                <h4 class="quote__sub-price">
-                    SUB TOTAL      
-                    <p class="quote__price_mg">$900</p>
-                </h4>
-                <h4 class="quote__price">
-                    GRAND TOTAL      
-                    <p class="quote__price_mg quote__price_red">$900</p>
-                </h4>
-                <div class="quote__devider"></div>
-                <a href="#" class="quote__button">PROCEED TO CHECKOUT</a>
-            </div>
-        </form>
-    </main>
+        <div class="registration-info">
+            <h3 class="registration-info__header">LOYALTY HAS ITS PERKS</h3>
+            <p class="registration-info__description">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+            <p class="registration-info__perk">15% off welcome offer</p>
+            <p class="registration-info__perk">Free shipping, returns and exchanges on all orders</p>
+            <p class="registration-info__perk">$10 off a purchase on your birthday</p>
+            <p class="registration-info__perk">Early access to products</p>
+            <p class="registration-info__perk">Exclusive offers & rewards</p>
+        </div>
+    </div>
     <footer>        
         <div class="footer__subscribe center">
             <figure class="footer__subscribe__info">

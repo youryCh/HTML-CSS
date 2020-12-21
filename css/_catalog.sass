@@ -1,0 +1,143 @@
+.main-catalog__product
+    display: grid
+    grid-template: repeat(1, 1fr) / repeat(3, 1fr)
+    grid-gap: 30px
+    margin-bottom: 128px
+
+details summary::-webkit-details-marker
+    display: none
+
+.filter-menu
+    position: relative
+
+    &_position
+        +centerPadding()
+        margin: 51px 0 64px
+        display: flex
+
+    &__text
+        +font(14px, 17px)
+        font-weight: 600
+        color: #000000
+        padding-left: 12px
+
+        &_red
+            +font(14px, 17px)
+            font-weight: 600
+            color: $buttonColor
+
+    &__navbar
+        position: absolute
+        left: -100vw
+        z-index: 1
+        background-color: white
+        padding: 17px
+        box-sizing: border-box
+        width: 360px
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+
+    &__details
+        +font(14px, 17px)
+        color: $buttonColor
+        margin-top: 18px
+
+    &__details > summary
+        border-left: 5px solid $buttonColor
+        height: 37px
+        border-bottom: 1px solid #EBEBEB
+        display: flex
+        align-items: center
+        padding-left: 11px
+        outline: none
+
+    &__ref
+        +font(14px, 17px)
+        color: #6F6E6E
+        margin: 11px 12px
+        transition: .2s
+
+        &:hover
+            color: $buttonColor
+
+    &__input:checked ~ nav
+        left: -5px
+        top: -16px
+
+    &__category
+        display: flex
+        flex-direction: column
+        background-color: white
+        border-left: 5px solid white
+
+    &__img_mg
+        margin-left: 11px
+
+.chooser-checkbox
+    position: relative
+    +font(14px, 17px)
+    color: #6F6E6E
+    margin-left: 28px
+
+    &_position
+        margin-left: 26%
+        display: flex
+
+    &__navbar
+        position: absolute
+        left: -100vw
+        z-index: 1
+        background-color: white
+        width: 79px
+        height: 103px
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        +font(14px, 16px)
+        color: #6F6E6E
+        padding: 9px
+        box-sizing: border-box    
+
+    &__input:checked ~ nav
+        left: 0
+
+    &__checkbox
+        width: 12px
+        height: 12px
+        border: 1px solid #EBEBEB
+        margin-right: 9px
+
+        &_position
+           display: flex
+
+        &_visible:checked ~ div
+            background-color: #ccc
+
+    &__img
+        margin-left: 10px
+
+.pagination
+    display: flex
+    justify-content: center
+    margin-top: 48px
+
+    &_position
+        width: 284px
+        height: 44px
+        +flexCenter()
+        border: 1px solid #EBEBEB
+        border-radius: 4px
+
+    &__item
+        +font(16px, 19px)
+        font-weight: 300
+        color: #C4C4C4
+        margin-left: 20px
+        transition: .2s
+
+        &_no-mg
+            margin-left: 0
+            margin-right: 20px
+
+        &:hover
+            color: $buttonColor

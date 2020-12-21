@@ -9,13 +9,13 @@
 <body>
     <header class="top-header">
         <div class="top-header__left">
-            <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+            <a href="index.html"><img src="img/logo.svg" class="top-header__logo" alt="logo"></a>
             <a href="#"><img src="img/search.svg" class="top-header__search" alt="search"></a>
         </div>
         <div class="top-header__right">
             <input type="checkbox" id="main_menu">
             <label for="main_menu">
-                <img src="img/menu.svg" alt="menu">
+                <img src="img/menu.svg" class="top-header__main-menu" alt="menu">
             </label>
             <nav>
                 <label for="main_menu" class="close_icon">
@@ -41,8 +41,8 @@
                 <a href="catalog.html" class="main_menu__item">Shirts</a>
                 <a href="catalog.html" class="main_menu__item">Bags</a>
             </nav>
-            <a href="#"><img src="img/account.svg" class="top-header__account" alt="account"></a>
-            <a href="cart.html"><img src="img/trolley.svg" alt="trolley"></a>
+            <a href="registration.html"><img src="img/account.svg" class="top-header__account" alt="account"></a>
+            <a href="cart.html"><img src="img/trolley.svg" class="top-header__cart" alt="trolley"></a>
         </div>
     </header>
     <section class="main-catalog__header__container">
@@ -57,87 +57,85 @@
             </nav>
         </div>
     </section>
-    <section class="main-catalog__filter">
-        <div class="filter__menu">
-            <input class="filter__menu__input" type="checkbox" id="filter">
-            <label for="filter" class="filter__menu__text">
+    <section class="filter-menu_position">
+        <div class="filter-menu">
+            <input class="filter-menu__input" type="checkbox" id="filter">
+            <label for="filter" class="filter-menu__text">
                 FILTER
-                <img src="img/filter_img.svg" class="filter__img_mg" alt="toggle">
+                <img src="img/filter_img.svg" class="filter-menu__img_mg" alt="toggle">
             </label>
-            <nav class="filter__menu__navbar">
-                <input class="filter__menu__input" type="checkbox" id="filter">
-                <label for="filter" class="filter__menu__text_red">
+            <nav class="filter-menu__navbar">
+                <input class="filter-menu__input" type="checkbox" id="filter">
+                <label for="filter" class="filter-menu__text_red">
                 FILTER
-                <img src="img/filter_img_red.svg" class="filter__img_mg" alt="toggle">
-                <details class="filter__menu__details" open>
+                <img src="img/filter_img_red.svg" class="filter-menu__img_mg" alt="toggle">
+                <details class="filter-menu__details" open>
                     <summary>CATEGORY</summary>
-                    <div class="filter__menu__category">
-                        <a href="#" class="filter__menu__ref">Accessories</a>
-                        <a href="#" class="filter__menu__ref">Bags</a>
-                        <a href="#" class="filter__menu__ref">Denim</a>
-                        <a href="#" class="filter__menu__ref">Hoodies & Sweatshirts</a>
-                        <a href="#" class="filter__menu__ref">Jackets & Coats</a>
-                        <a href="#" class="filter__menu__ref">Polos</a>
-                        <a href="#" class="filter__menu__ref">Shirts</a>
-                        <a href="#" class="filter__menu__ref">Shoes</a>
-                        <a href="#" class="filter__menu__ref">Sweaters & Knits</a>
-                        <a href="#" class="filter__menu__ref">T-Shirts</a>
-                        <a href="#" class="filter__menu__ref">Tanks</a>
+                    <div class="filter-menu__category">
+                        <a href="#" class="filter-menu__ref">Accessories</a>
+                        <a href="#" class="filter-menu__ref">Bags</a>
+                        <a href="#" class="filter-menu__ref">Denim</a>
+                        <a href="#" class="filter-menu__ref">Hoodies & Sweatshirts</a>
+                        <a href="#" class="filter-menu__ref">Jackets & Coats</a>
+                        <a href="#" class="filter-menu__ref">Polos</a>
+                        <a href="#" class="filter-menu__ref">Shirts</a>
+                        <a href="#" class="filter-menu__ref">Shoes</a>
+                        <a href="#" class="filter-menu__ref">Sweaters & Knits</a>
+                        <a href="#" class="filter-menu__ref">T-Shirts</a>
+                        <a href="#" class="filter-menu__ref">Tanks</a>
                     </div>
                 </details>
-                <details class="filter__menu__details">
+                <details class="filter-menu__details">
                     <summary>BRAND</summary>
                 </details>
-                <details class="filter__menu__details">
+                <details class="filter-menu__details">
                     <summary>DESIGNER</summary>
                 </details>
             </nav>
         </div>
-        <div class="main-catalog__filter__center">
-            <div class="filter__center__menu">
+        <div class="chooser-checkbox_position">
+            <div class="chooser-checkbox">
                 <input type="checkbox">
                 <label for="#">
                     TRENDING NOW
-                    <img src="img/filter_img2.svg" class="filter_img2_mg" alt="toggle">
+                    <img src="img/filter_img2.svg" class="chooser-checkbox__img" alt="toggle">
                 </label>
-                <nav class="filter__menu__navbar"></nav>
             </div>            
-            <div class="filter__center__menu">
-                <input type="checkbox" id="filter2" class="filter__center__input">
+            <div class="chooser-checkbox">
+                <input type="checkbox" id="filter2" class="chooser-checkbox__input">
                 <label for="filter2">
                     SIZE 
-                    <img src="img/filter_img2.svg" class="filter_img2_mg" alt="toggle">
+                    <img src="img/filter_img2.svg" class="chooser-checkbox__img" alt="toggle">
                 </label>
-                <nav class="filter__center__navbar">
-                    <label class="filter__center__add_checkbox">
-                        <input type="checkbox" class="checkbox_visible">
-                        <div class="add_checkbox"></div>
+                <nav class="chooser-checkbox__navbar">
+                    <label class="chooser-checkbox__checkbox_position">
+                        <input type="checkbox" class="chooser-checkbox__checkbox_visible">
+                        <div class="chooser-checkbox__checkbox"></div>
                         XS
                     </label>
-                    <label class="filter__center__add_checkbox">
-                        <input type="checkbox" class="checkbox_visible">
-                        <div class="add_checkbox"></div>
+                    <label class="chooser-checkbox__checkbox_position">
+                        <input type="checkbox" class="chooser-checkbox__checkbox_visible">
+                        <div class="chooser-checkbox__checkbox"></div>
                         S
                     </label>
-                    <label class="filter__center__add_checkbox">
-                        <input type="checkbox" class="checkbox_visible">
-                        <div class="add_checkbox"></div>
+                    <label class="chooser-checkbox__checkbox_position">
+                        <input type="checkbox" class="chooser-checkbox__checkbox_visible">
+                        <div class="chooser-checkbox__checkbox"></div>
                         M
                     </label>
-                    <label class="filter__center__add_checkbox">
-                        <input type="checkbox" class="checkbox_visible">
-                        <div class="add_checkbox"></div>
+                    <label class="chooser-checkbox__checkbox_position">
+                        <input type="checkbox" class="chooser-checkbox__checkbox_visible">
+                        <div class="chooser-checkbox__checkbox"></div>
                         L
                     </label>                    
                 </nav>
             </div>            
-            <div class="filter__center__menu">
+            <div class="chooser-checkbox">
                 <input type="checkbox">
                 <label>
                     PRICE
-                    <img src="img/filter_img2.svg" class="filter_img2_mg" alt="toggle">
+                    <img src="img/filter_img2.svg" class="chooser-checkbox__img" alt="toggle">
                 </label>
-                <nav class="filter__menu__navbar"></nav>
             </div>            
         </div>
     </section>
@@ -147,7 +145,7 @@
                 <img src="img/product_img1.png" class="product__img" alt="product">
                 <h4 class="product__card__header">ELLERY X M'O CAPSULE</h4>
             </a>
-            <a href="cart.html" class="product__button_hover">
+            <a href="#" class="product__button_hover">
                 <img src="img/trolley-hover.svg" alt="cart">
                 Add to Cart
             </a>
@@ -159,7 +157,7 @@
                 <img src="img/product_img13.png" class="product__img" alt="product">
                 <h4 class="product__card__header">ELLERY X M'O CAPSULE</h4>
             </a>
-            <a href="cart.html" class="product__button_hover">
+            <a href="#" class="product__button_hover">
                 <img src="img/trolley-hover.svg" alt="cart">
                 Add to Cart
             </a>
@@ -171,7 +169,7 @@
                 <img src="img/product_img3.png" class="product__img" alt="product">
                 <h4 class="product__card__header">ELLERY X M'O CAPSULE</h4>
             </a>
-            <a href="cart.html" class="product__button_hover">
+            <a href="#" class="product__button_hover">
                 <img src="img/trolley-hover.svg" alt="cart">
                 Add to Cart
             </a>
@@ -183,7 +181,7 @@
                 <img src="img/product_img4.png" class="product__img" alt="product">
                 <h4 class="product__card__header">ELLERY X M'O CAPSULE</h4>
             </a>
-            <a href="cart.html" class="product__button_hover">
+            <a href="#" class="product__button_hover">
                 <img src="img/trolley-hover.svg" alt="cart">
                 Add to Cart
             </a>
@@ -195,7 +193,7 @@
                 <img src="img/product_img9.png" class="product__img" alt="product">
                 <h4 class="product__card__header">ELLERY X M'O CAPSULE</h4>
             </a>
-            <a href="cart.html" class="product__button_hover">
+            <a href="#" class="product__button_hover">
                 <img src="img/trolley-hover.svg" alt="cart">
                 Add to Cart
             </a>
@@ -207,7 +205,7 @@
                 <img src="img/product_img10.png" class="product__img" alt="product">
                 <h4 class="product__card__header">ELLERY X M'O CAPSULE</h4>
             </a>
-            <a href="cart.html" class="product__button_hover">
+            <a href="#" class="product__button_hover">
                 <img src="img/trolley-hover.svg" alt="cart">
                 Add to Cart
             </a>
@@ -219,7 +217,7 @@
                 <img src="img/product_img11.png" class="product__img" alt="product">
                 <h4 class="product__card__header">ELLERY X M'O CAPSULE</h4>
             </a>
-            <a href="cart.html" class="product__button_hover">
+            <a href="#" class="product__button_hover">
                 <img src="img/trolley-hover.svg" alt="cart">
                 Add to Cart
             </a>
@@ -231,7 +229,7 @@
                 <img src="img/product_img12.png" class="product__img" alt="product">
                 <h4 class="product__card__header">ELLERY X M'O CAPSULE</h4>
             </a>
-            <a href="cart.html" class="product__button_hover">
+            <a href="#" class="product__button_hover">
                 <img src="img/trolley-hover.svg" alt="cart">
                 Add to Cart
             </a>
@@ -243,7 +241,7 @@
                 <img src="img/product_img14.png" class="product__img" alt="product">
                 <h4 class="product__card__header">ELLERY X M'O CAPSULE</h4>
             </a>
-            <a href="cart.html" class="product__button_hover">
+            <a href="#" class="product__button_hover">
                 <img src="img/trolley-hover.svg" alt="cart">
                 Add to Cart
             </a>
@@ -253,16 +251,16 @@
     </section>
     <nav class="pagination">
         <div>
-            <ul class="pagination__container">
-                <li><a href="#" class="pagination_item"><img src="img/left_arrow.svg" alt="left arrow"></a></li>
+            <ul class="pagination_position">
+                <li><a href="#"><img src="img/left_arrow.svg" alt="left arrow"></a></li>
                 <li><a href="#" class="pagination__item">1</a></li>
                 <li><a href="#" class="pagination__item">2</a></li>
                 <li><a href="#" class="pagination__item">3</a></li>
                 <li><a href="#" class="pagination__item">4</a></li>
                 <li><a href="#" class="pagination__item">5</a></li>
                 <li><a href="#" class="pagination__item">6</a></li>
-                <li><a href="#" class="pagination__item pagination__item_notmg">.....20</a></li>
-                <li><a href="#" class="pagination_item"><img src="img/right_arrow.svg" alt="right arrow"></a></li>
+                <li><a href="#" class="pagination__item pagination__item_no-mg">.....20</a></li>
+                <li><a href="#"><img src="img/right_arrow.svg" alt="right arrow"></a></li>
             </ul>
         </div>
     </nav>
