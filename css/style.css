@@ -681,7 +681,6 @@ input[type=checkbox] {
   -ms-grid-columns: (1fr)[3];
       grid-template: auto/repeat(3, 1fr);
   grid-gap: 30px;
-  margin-bottom: 128px;
 }
 
 details summary::-webkit-details-marker {
@@ -1167,6 +1166,10 @@ details summary::-webkit-details-marker {
   left: 14px;
 }
 
+.main-catalog__product_mg {
+  margin-bottom: 128px;
+}
+
 .add-to-cart-btn {
   width: 211px;
   height: 47px;
@@ -1284,6 +1287,7 @@ details summary::-webkit-details-marker {
   height: 306px;
   -webkit-box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
           box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+  position: relative;
 }
 
 .cart-card:not(:last-child) {
@@ -1349,8 +1353,9 @@ details summary::-webkit-details-marker {
 }
 
 .cart-card__close-img {
-  margin-left: 35px;
-  margin-top: 28px;
+  position: absolute;
+  right: 24px;
+  top: 28px;
 }
 
 .cart-buttons {
@@ -1538,6 +1543,110 @@ details summary::-webkit-details-marker {
   background-color: #e05c6e;
 }
 
+@media (max-width: 769px) {
+  .cart {
+    padding: 0 16px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 59px 0 147px;
+  }
+  .cart-card {
+    width: 100%;
+  }
+  .cart-buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 62px 0;
+  }
+  .cart-buttons__btn {
+    margin: 0 24px;
+  }
+  .address {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .address__form {
+    width: 353px;
+  }
+}
+
+@media (max-width: 376px) {
+  .main-catalog__header__header_mg {
+    margin-top: 50px;
+  }
+  .cart {
+    padding: 0 8px;
+    margin: 39px 0 96px;
+  }
+  .cart-card {
+    height: 188px;
+  }
+  .cart-card:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .cart-card__description {
+    padding: 13px 13px 13px 17px;
+    margin-left: 0;
+  }
+  .cart-card__header {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 25px;
+  }
+  .cart-card__text {
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 17px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .cart-card__box {
+    width: 24px;
+    height: 15px;
+    font-family: Lato;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .cart-card__close-img {
+    top: 14px;
+    right: 10px;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  .cart-buttons {
+    margin: 30px 0;
+  }
+  .cart-buttons__btn {
+    font-family: Lato;
+    font-size: 12px;
+    line-height: 14px;
+    height: 33px;
+    margin: 0;
+  }
+  .cart-buttons__btn:not(:last-child) {
+    margin-right: 9px;
+  }
+  .address {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .address__form {
+    width: 100%;
+  }
+}
+
 .registration-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1563,7 +1672,7 @@ details summary::-webkit-details-marker {
 .registration-form__input {
   width: 100%;
   height: 45px;
-  margin-top: 21px;
+  margin-top: 19px;
   padding: 0 17px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1624,6 +1733,7 @@ details summary::-webkit-details-marker {
 
 .registration-info {
   max-width: 652px;
+  margin-left: 22px;
 }
 
 .registration-info__header {
@@ -1655,6 +1765,44 @@ details summary::-webkit-details-marker {
 .registration-info__perk::before {
   content: url("../img/check-img.svg");
   margin-right: 23px;
+}
+
+@media (max-width: 769px) {
+  .registration-container {
+    padding: 0 16px;
+  }
+  .registration-info__header {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration-info__description {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration-info__perk {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 376px) {
+  .main-catalog__header__header {
+    margin: auto 0;
+  }
+  .registration-container {
+    padding: 0 8px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .registration-info {
+    margin-left: 0;
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 769px) {
