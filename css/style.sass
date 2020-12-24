@@ -33,33 +33,33 @@ input[type=checkbox]
 
     &__logo
         transition: .2s
-        
+
         &:hover
             transform: scale(1.1)
 
     &__search
         padding-left: 41px
         transition: .2s
-        
+
         &:hover
             transform: scale(1.1)
 
     &__main-menu
         transition: .2s
-        
+
         &:hover
             transform: scale(1.1)
 
     &__account
         padding: 0 33px
         transition: .2s
-        
+
         &:hover
             transform: scale(1.1)
 
     &__cart
         transition: .2s
-        
+
         &:hover
             transform: scale(1.1)
 
@@ -132,10 +132,10 @@ input[type=checkbox]
     &__header
         +font(48px, 58px)
         font-weight: 900
-        color: #222224    
+        color: #222224
 
     &__text
-        +font(32px, 38px)    
+        +font(32px, 38px)
         font-weight: 700
         color: #222224
 
@@ -147,12 +147,12 @@ input[type=checkbox]
     display: flex
     justify-content: space-between
     margin: 63px 0 30px
-    height: 260px
+    max-height: 260px
 
     &__item_margin
         margin: 0 30px
 
-    &_img
+    &__img
         width: 100%
 
     &__item
@@ -188,11 +188,11 @@ input[type=checkbox]
     &__header
         text-align: center
 
-        &__header
-            +font(30px, 97px)
-            font-weight: 400    
-            color: #222224
-            margin-top: 97px
+    &__heading
+        +font(30px, 97px)
+        font-weight: 400
+        color: #222224
+        margin-top: 97px
 
     &__text
         +font(14px, 17px)
@@ -204,34 +204,6 @@ input[type=checkbox]
         display: grid
         grid-template: repeat(2, 1fr) / repeat(3, 1fr)
         grid-gap: 30px
-
-    &__card
-        background-color: #F8F8F8
-        position: relative        
-
-        &:hover .product__img
-            filter: brightness(50%)
-
-        &:hover .product__button_hover
-            display: flex
-
-        &__header
-            +font(13px, 16px)
-            font-weight: 400
-            color: #000000
-            padding: 25px 18px 12px
-
-        &__text
-            +font(14px, 17px)
-            font-weight: 300
-            color: #5D5D5D
-            padding: 0 16px
-
-        &__price
-            +font(16px, 19px)
-            font-weight: 400
-            color: $buttonColor
-            padding: 18px 18px 20px
 
     &__button
         width: 211px
@@ -248,26 +220,54 @@ input[type=checkbox]
             background-color: $buttonColor
             color: white
 
-        &_hover
-            position: absolute
-            top: 33%
-            left: 31%
-            border: 1px solid #FFFFFF
-            width: 138px
-            height: 43px
-            justify-content: space-around
-            align-items: center
-            display: none
-            +font(14px, 17px)
-            font-weight: 400
-            color: #FFFFFF
-            transition: .2s
+.product-card
+    background-color: #F8F8F8
+    position: relative
+
+    &:hover .product-card__img
+        filter: brightness(50%)
+
+    &:hover .product-card__button-hover
+        display: flex
+
+    &__header
+        +font(13px, 16px)
+        font-weight: 400
+        color: #000000
+        padding: 25px 18px 12px
+
+    &__text
+        +font(14px, 17px)
+        font-weight: 300
+        color: #5D5D5D
+        padding: 0 16px
+
+    &__price
+        +font(16px, 19px)
+        font-weight: 400
+        color: $buttonColor
+        padding: 18px 18px 20px
+
+    &__button-hover
+        position: absolute
+        top: 33%
+        left: 31%
+        border: 1px solid #FFFFFF
+        width: 138px
+        height: 43px
+        justify-content: space-around
+        align-items: center
+        display: none
+        +font(14px, 17px)
+        font-weight: 400
+        color: #FFFFFF
+        transition: .2s
 
     &__img
         width: 100%
         transition: .2s
 
-.footer__top
+.footer-top
     height: 341px
     background-color: #222224
     margin-top: 95px
@@ -296,7 +296,7 @@ input[type=checkbox]
         text-align: center
         color: #FBFBFB
 
-.footer__subscribe
+.footer-subscribe
     background-image: url(../img/footer_bcg.png)
     background-size: cover
     background-position: center, bottom
@@ -315,21 +315,21 @@ input[type=checkbox]
         font-weight: 400
         color: #222224
 
-    &__form
-        text-align: center
+.subscribe-form
+    text-align: center
 
-    &__form__header
+    &__header
         +font(24px, 40px)
         font-weight: bold
         color: #222224
 
-    &__form__text
+    &__text
         margin: 10px 0 32px
         +font(18px, 30px)
         font-weight: 400
         color: #222224
 
-    &__form__form
+    &__form
         height: 49px
         display: flex
 
@@ -354,7 +354,7 @@ input[type=checkbox]
         &:hover
             background-color: $buttonColor - #111
 
-.footer__bottom
+.footer-bottom
     height: 79px
     background-color: #222224
 
@@ -364,34 +364,34 @@ input[type=checkbox]
         justify-content: space-between
         align-items: center
 
-.footer__copyright
-    +font(16px, 19px)
-    font-weight: 400
-    color: #FBFBFB
+    &__copyright
+        +font(16px, 19px)
+        font-weight: 400
+        color: #FBFBFB
 
-.footer__social
-    display: flex
+    &__social
+        display: flex
 
-.footer__icon
-    width: 32px
-    height: 32px
-    background-color: white
-    margin-left: 7px
-    +flexCenter()
-    transition: .2s
-
-    &:hover
-        background-color: $buttonColor
-
-    &:hover .footer__icon_hover
-        filter: invert(1)
+    &__icon
+        width: 32px
+        height: 32px
+        background-color: white
+        margin-left: 7px
+        +flexCenter()
         transition: .2s
 
-    &__instagram:hover .instagram_invert
+        &:hover
+            background-color: $buttonColor
+
+        &:hover .footer-bottom__icon_hover
+            filter: invert(1)
+            transition: .2s
+
+    &__instagram:hover .footer-bottom__instagram_invert
         filter: none
 
-.instagram_invert
-    filter: invert(1)
+    &__instagram_invert
+        filter: invert(1)
 
 .main-catalog__header__container
     height: 148px
@@ -436,3 +436,140 @@ input[type=checkbox]
 @import cart
 
 @import registration
+
+@media (max-width: $screenTablet)
+    .top-header
+        padding: 0 16px
+
+    .promo
+        &__header
+            +font(44px, 53px)
+
+        &__text
+            +font(24px, 29px)
+
+        &__content
+            margin-left: 40px
+
+    .catalog
+        padding: 0 16px
+        margin: 20px 0 20px
+
+        &__item_margin
+            margin: 0 20px       
+
+    .catalog__bottom
+        padding: 0 16px
+
+    .product__catalog
+        padding: 0 16px
+        grid-template: repeat(3, 1fr)/repeat(2, 1fr)
+        grid-gap: 16px
+
+    .product__heading
+        line-height: 36px
+
+    .product__button
+        margin: 32px auto 0
+
+    .footer-top
+        margin-top: 65px
+        height: 100%
+        padding-bottom: 64px
+
+        &__container
+            flex-direction: column
+
+        &__item
+            margin-top: 48px
+
+    .footer-subscribe
+        flex-direction: column
+        padding: 53px 0 140px
+        background-position: left, bottom
+
+    .subscribe-form__text
+        margin: 0 0 27px
+
+    .footer-bottom
+        padding: 0 16px
+
+@media (max-width: $screenMobile)
+    .main-menu__img_hide
+        display: none
+
+    .top-header
+        padding: 0 16px
+
+    .catalog
+        padding: 0 16px
+        flex-direction: column
+        max-height: 100%
+        margin: 64px 0 0
+
+        &__item
+            margin-bottom: 32px
+
+            &_height
+                height: 111px
+
+        &__item_margin
+            margin: 0 0 32px
+
+        &__bottom
+            padding: 0 16px
+
+        &__img_height
+            height: 100%
+
+    .top-header__right > nav
+        right: 0
+
+    .promo__left
+        display: none
+
+    .promo__content
+        margin: 0 auto
+
+    .promo__right
+        padding: 0
+        width: 100%
+        height: 363px
+
+    .promo__header
+        +font(38px, 45px)
+
+    .promo__text
+        +font(20px, 24px)
+
+    .product__heading
+        margin-top: 64px
+
+    .product__catalog
+        padding: 0 8px
+        grid-template: auto / repeat(1, 1fr)
+
+    .product__text
+        margin-bottom: 64px
+
+    .product__button
+        margin: 41px auto 0
+
+    .footer-top
+        margin-top: 96px
+
+    .footer-subscribe
+        padding: 53px 0 110px
+
+    .footer-bottom
+        height: 100%
+
+        &__container
+            flex-direction: column-reverse
+            padding-bottom: 9px
+
+        &__social
+            margin: 40px 0
+
+    .subscribe-form__text
+        +font(14px, 22px)

@@ -9,6 +9,7 @@
     width: 652px
     height: 306px
     box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13)
+    position: relative
 
     &:not(:last-child)
         margin-bottom: 40px
@@ -55,8 +56,11 @@
         color: #656565
 
     &__close-img
-        margin-left: 35px
-        margin-top: 28px
+        // margin-left: 35px
+        // margin-top: 28px
+        position: absolute
+        right: 24px
+        top: 28px
 
 .cart-buttons
     display: flex
@@ -162,3 +166,80 @@
 
         &:hover
             background-color: $buttonColor - #111
+
+@media (max-width: $screenTablet)
+    .cart
+        padding: 0 16px
+        flex-direction: column
+        margin: 59px 0 147px
+
+        &-card
+            width: 100%
+
+        &-buttons
+            justify-content: center
+            margin: 62px 0
+
+            &__btn
+                margin: 0 24px
+
+    .address
+        width: 100%
+        display: flex
+        justify-content: space-between
+
+        &__form
+            width: 353px
+
+@media (max-width: $screenMobile)
+    .main-catalog__header__header_mg
+        margin-top: 50px
+
+    .cart
+        padding: 0 8px
+        margin: 39px 0 96px
+
+        &-card
+            height: 188px
+            &:not(:last-child)
+                margin-bottom: 32px
+                
+
+            &__description
+                padding: 13px 13px 13px 17px
+                margin-left: 0
+
+            &__header
+                +font(16px, 19px)
+                margin-bottom: 25px
+
+            &__text
+                +font(14px, 17px)
+                align-items: baseline
+
+            &__box
+                width: 24px
+                height: 15px
+                +font(10px, 12px)
+
+            &__close-img
+                top: 14px
+                right: 10px
+                transform: scale(.6)
+
+        &-buttons
+            margin: 30px 0
+
+            &__btn
+                +font(12px, 14px)
+                height: 33px
+                margin: 0
+
+                &:not(:last-child)
+                    margin-right: 9px
+                    
+    .address
+        flex-direction: column
+
+        &__form
+            width: 100%
